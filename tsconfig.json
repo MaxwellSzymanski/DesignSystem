@@ -9,7 +9,7 @@
     "jsx": "preserve",
     "incremental": true,
     "noEmit": true,
-
+    
     /* Strict Type-Checking Options */
     "strict": true,
     "noImplicitAny": true,
@@ -22,17 +22,19 @@
     "noFallthroughCasesInSwitch": false,
 
     /* Module Resolution Options */
-    "baseUrl": ".",
+    "baseUrl": "imports",
     "paths": {
       /* Support absolute /imports/* with a leading '/' */
       "/*": ["*"]
     },
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "types": ["node", "mocha"],
+    "types": ["node", "mocha", "react/next", "react-dom/next", "mdx"],
     "esModuleInterop": true,
     "preserveSymlinks": true
+    
   },
+  "include": ["imports", "**/*.mdx", "**/*.md", "imports/**/**/**/*.md"],
   "exclude": [
     "./.meteor/**",
     "./packages/**"

@@ -38,7 +38,7 @@ function DarkToggle() {
   }, []);
 
   return (
-    <div className="absolute flex right-5 md:right-10 top-5 md:top-10">
+    <div className="absolute flex right-2 md:right-2 top-2 md:top-2">
       <label className="relative inline-flex items-center cursor-pointer">
         <span className="absolute left-0 ml-1 text-sm font-medium text-slate-600 dark:text-slate-300">
           <svg
